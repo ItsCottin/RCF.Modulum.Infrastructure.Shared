@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/ItsCottin/RCF.Modulum.Infrastructure</RepositoryUrl>
+    <Description>Nuget Infrastructure Shared para projeto Modulum </Description>
+    <PackageReleaseNotes>Adicionado suporte para Modulum</PackageReleaseNotes>
+    <Version>0.0.1-beta.1</Version>
+    <PackageId>RCF.Modulum.Infrastructure.Shared</PackageId>
+    <Title>RCF.Modulum.Infrastructure.Shared</Title>
+    <Authors>Cottin</Authors>
+    <Company>RCF</Company>
+    <Product>Modulum</Product>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>Licence.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Licence.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include=".github\workflows\publish.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.11.0" />
+    <PackageReference Include="MimeKit" Version="4.11.0" />
+    <PackageReference Include="RCF.Modulum.Application" Version="0.0.1-beta.2" />
+  </ItemGroup>
+
+</Project>
