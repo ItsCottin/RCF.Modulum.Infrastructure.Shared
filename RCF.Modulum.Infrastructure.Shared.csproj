@@ -33,7 +33,7 @@
   <ItemGroup>
     <PackageReference Include="MailKit" Version="4.11.0" />
     <PackageReference Include="MimeKit" Version="4.11.0" />
-    <PackageReference Include="RCF.Modulum.Application" Version="0.0.3-beta.2" />
+    <PackageReference Include="RCF.Modulum.Application" Version="0.0.3-beta.3" />
   </ItemGroup>
 
   <!--<ItemGroup>
